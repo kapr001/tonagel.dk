@@ -1528,3 +1528,8 @@ font-weight: bold;
 #kunder_ {
   padding-top: 0%;
 }
+
+.karomail {
+  color: black;
+  text-decoration: none;
+}
