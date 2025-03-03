@@ -84,7 +84,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
   var formData = new FormData(this);
 
-  fetch("https://formsubmit.co/ajax/karolineprimdahl94@gmail.com", {
+  fetch("https://formsubmit.co/ajax/sofie@tonagel.dk", {
     method: "POST",
     body: formData,
   })
@@ -107,7 +107,7 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
 
   var formData = new FormData(this);
 
-  fetch("https://formsubmit.co/ajax/karolineprimdahl94@gmail.com", {
+  fetch("https://formsubmit.co/ajax/sofie@tonagel.dk", {
     method: "POST",
     body: formData,
   })
