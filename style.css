@@ -1561,7 +1561,7 @@ font-weight: bold;
 #close-popup {
     display: inline-block;
     margin-top: 20px;
-    background: #4CAF50;
+    background: #a78d7c;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -1571,5 +1571,9 @@ font-weight: bold;
 }
 
 #close-popup:hover {
-    background: #388E3C;
+    background: #7a695d;
+}
+
+.p_pop {
+  padding-top: 4%;
 }
