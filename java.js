@@ -72,10 +72,32 @@ window.addEventListener("resize", () => {
   moveSlide(0);
 });
 
-   window.onload = function () {
-     const urlParams = new URLSearchParams(window.location.search);
-     if (urlParams.get("success") === "1") {
-       alert("Tak for din mail!");
-     }
-   };
+window.onload = function () {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("success") === "1") {
+    alert("Tak for din mail!");
+  }
+};
 
+document.getElementById("contact-form").addEventListener("submit", function (event) {
+  event.preventDefault(); // Forhindrer siden i at reloade
+
+  var formData = new FormData(this);
+
+  fetch("https://formsubmit.co/ajax/karolineprimdahl94@gmail.com", {
+    method: "POST",
+    body: formData,
+  })
+    .then((response) => {
+      if (response.ok) {
+        document.getElementById("popup-message").style.display = "block"; // Vis pop-up besked
+        setTimeout(() => {
+          document.getElementById("popup-message").style.display = "none"; // Skjul efter 3 sek
+        }, 3000);
+        document.getElementById("contact-form").reset(); // Nulstil formularen
+      } else {
+        alert("Der opstod en fejl. Prøv igen.");
+      }
+    })
+    .catch((error) => console.log("Fejl:", error));
+});

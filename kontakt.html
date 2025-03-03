@@ -48,31 +48,34 @@
                     <p class="kontakt_p">Kontakt mig endelig, hvis du ønsker at etablere eller drøfte et samarbejde.</p>
                 </div>
             </div>
+<div class="kontakt2">
+    <h2 id="kunder_" class="kunder">Kontakt mig her!</h2>
+    <form id="contact-form">
+        <label for="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
 
-            <div class="kontakt2">
-                <h2 id="kunder_" class="kunder">Kontakt mig her!</h2>
-                <form action="https://formsubmit.co/karolineprimdahl94@gmail.com" method="POST">
-                    <label for="name">Navn:</label>
-                    <input type="text" id="name" name="name" required>
-                    <br>
+        <label for="email">Din e-mail:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
 
-                    <label for="email">Din e-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
+        <label for="emne">Emne:</label>
+        <input type="text" id="emne" name="emne" required>
+        <br>
 
-                    <label for="emne">Emne:</label>
-                    <input type="text" id="emne" name="emne" required>
-                    <br>
+        <label for="message">Besked:</label>
+        <textarea class="stort_tekstfelt" id="message" name="message" required></textarea>
+        <br>
 
-                    <label for="message">Besked:</label>
-                    <textarea class="stort_tekstfelt" id="message" name="message" required></textarea>
-                    <br>
+        <button type="submit">Send besked</button>
+    </form>
+</div>
 
-
-
-                    <button type="submit">Send besked</button>
-                </form>
-            </div>
+<!-- Pop-up besked -->
+<div id="popup-message"
+    style="display: none; position: fixed; top: 20px; right: 20px; background: #4CAF50; color: white; padding: 10px; border-radius: 5px;">
+    Beskeden er sendt! 🎉
+</div>
         </div>
         <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="arrow up"></i></button>
     </main>
